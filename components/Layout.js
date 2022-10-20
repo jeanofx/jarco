@@ -13,18 +13,22 @@ export default function Layout({ title, children }) {
 
       <div className="flex min-h-screen flex-col justify-between">
         <header>
-          <nav className="flex h-12 justify-between">
+          <nav className="flex h-12 items-center px-3 justify-between shadow-md">
             <Link href="/">
               <a className="text-lg font-bold">Jarco</a>
             </Link>
             <div>
-              <Link href="/cart">Cart</Link>
+              <Link href="/cart">
+                <a className="p-2">Cart</a>
+              </Link>
               <Link href="/login">Login</Link>
             </div>
           </nav>
         </header>
-        <main>{children}</main>
-        <footer>footer</footer>
+        <main className="container m-auto mt-4 px-4">{children}</main>
+        <footer className="flex h-10 justify-center items-center shadow-inner">
+          Copyrith @ Adrift Design2022
+        </footer>
       </div>
     </>
   );
