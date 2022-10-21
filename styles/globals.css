@@ -19,9 +19,17 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+.card {
+  @apply mb-5 block rounded-xl border border-gray-200 shadow-md;
+}
+
+.primary-button{
+  @apply rounded bg-sky-500 py-2 px-4 shadow outline-none hover:bg-sky-600 active:bg-lime-500;
+}
+
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: ligth;
   }
   body {
     color: white;
